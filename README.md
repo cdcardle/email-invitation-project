@@ -1,7 +1,8 @@
-# README
+# Email Invitations Website Project
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is my project to create a website similar to evite.com using Ruby on Rails.
+
+Leaving this here for later use:
 
 Things you may want to cover:
 
