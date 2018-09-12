@@ -43,16 +43,22 @@ body {
   text-decoration: none;
   font: bold 18px arial;
   display: inline-block;
-  background-color:
 }
 
 .topnav a:hover {
-  background-color: #F34937;
-  color: black;
+  background-color: black;
+  color: yellow;
+}
+
+.topnav a.active {
+  background-color: yellow;
+  border: solid;
+  color: #CE0B0B;
 }
 
 .welcome {
-  font:
+  color: #B113D1;
+  font: 3em arial;
 }
 
 .botnav {
