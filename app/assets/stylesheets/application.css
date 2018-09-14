@@ -27,8 +27,16 @@ body {
   text-align: center;
 }
 
-.right {
+.floatright {
   float: right;
+}
+
+.floatleft {
+  float: left;
+}
+
+#logo {
+  font-size: 2.5em;
 }
 
 .topnav {
@@ -59,6 +67,49 @@ body {
 .welcome {
   color: #B113D1;
   font: 3em arial;
+}
+
+.column {
+  float: left;
+  flex: 33%;
+  padding: 0px;
+  background-color: gray;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width:  90%;
+  height: 90%;
+}
+
+#col-head {
+  font-size: 2.5em;
+  text-decoration: underline;
+}
+
+#col-head.girls {
+  color: pink;
+}
+
+#col-head.kids {
+  color: yellow;
+}
+
+#col-head.boys {
+  color: blue;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .botnav {
