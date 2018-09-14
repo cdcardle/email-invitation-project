@@ -13,17 +13,28 @@
  *= require_tree .
  *= require_self
  */
+
+/* -------------- fonts ---------------- */
+@font-face {
+   font-family: 'Monster-Unleashed';
+   src: url('/assets/Monster Unleashed.ttf')
+}
+
+/* --------------- css ----------------- */
 html {
-  width: 100%
+  width: 100%;
   margin: 0 auto;
   background-image: url(falling_envelopes.jpg);
+}
+
+body, .row, .column, .footer {
+  background-color: gray;
 }
 
 body {
   width: 70%;
   height: 100vh;
   margin: 0 auto;
-  background-color: white;
   text-align: center;
 }
 
@@ -37,6 +48,8 @@ body {
 
 #logo {
   font-size: 2.5em;
+  font-family: 'Monster-Unleashed';
+  padding: 7px 0 0 5px;
 }
 
 .topnav {
@@ -64,16 +77,32 @@ body {
   color: #CE0B0B;
 }
 
+.page-header {
+  width: 100%
+  margin: 0 auto;
+  background-image: url(confetti.jpg);
+  background-size: contain;
+}
+
+h1 {
+  margin: auto;
+}
+
 .welcome {
   color: #B113D1;
-  font: 3em arial;
+  font: 4em arial;
+  text-shadow: -4px 0 white, 0 4px white, 4px 0 white, 0 -4px white;
+}
+
+.shadow {
+  color: #C0F24C;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 .column {
   float: left;
   flex: 33%;
   padding: 0px;
-  background-color: gray;
 }
 
 .column img {
@@ -112,10 +141,10 @@ body {
   clear: both;
 }
 
-.botnav {
+.footer {
   overflow: hidden;
-  position: fixed;
+  position: relative;
+  height: 10%;
+  font-size: 0.75em;
   bottom: 0;
-  width: inherit;
-  font-size: 12px;
 }
