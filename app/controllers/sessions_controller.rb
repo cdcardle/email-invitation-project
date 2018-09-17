@@ -3,5 +3,6 @@ class SessionsController < ApplicationController
   end
 
   def create
+    raise inspect.params
   end
 end

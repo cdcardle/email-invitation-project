@@ -1,10 +1,22 @@
-<div class="topnav">
+<div class="topnav" id="MyTopnav">
   <div id="logo" class="floatleft">
     Emvitations
   </div>
   <div class="floatright">
-    <a class="active" href="/">Home</a>
-    <a href="/login">Log In</a>
-    <a href="/signup">Sign Up</a>
+    <a class="nav-link active" href="/">Home</a>
+    <a class="nav-link" href="/login">Log In</a>
+    <a class="nav-link" href="/signup">Sign Up</a>
   </div>
 </div>
+
+<script>
+  var header = document.getElementById("MyTopnav");
+  var nav-link = header.getElementsByClassName("link");
+  for (var i = 0; i < nav-link.length; i++) {
+  nav-link[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+  }
+</script>

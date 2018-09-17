@@ -25,6 +25,7 @@ html {
   width: 100%;
   margin: 0 auto;
   background-image: url(falling_envelopes.jpg);
+  overflow-y: scroll;
 }
 
 body, .row, .column, .footer {
@@ -57,7 +58,7 @@ body {
   overflow: hidden;
 }
 
-.topnav a {
+.nav-link {
   color: yellow;
   text-align: center;
   padding: 15px 15px;

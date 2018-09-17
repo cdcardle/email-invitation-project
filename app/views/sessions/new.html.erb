@@ -1,1 +1,22 @@
-Login
+<div class="page-header">
+  <h1 class="welcome">Login!</h1>
+</div>
+
+<p>
+  <%= form_for :user do |f| %>
+    <table class="login-table">
+      <tr class="text_fields">
+        <td>Email: </td>
+        <td><%= f.text_field :email %></td>
+      </tr>
+      <tr class="text_fields">
+        <td>Password: </td>
+        <td><%= f.password_field :password_digest %></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><%= f.submit "Login", class: "submit-button" %></td>
+      </tr>
+    </table>
+  <% end %>
+</p>
