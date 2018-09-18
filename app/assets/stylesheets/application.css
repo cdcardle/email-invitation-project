@@ -32,6 +32,10 @@ body, .row, .column, .footer {
   background-color: gray;
 }
 
+.page-header, .footer {
+  border: 1px solid black;
+}
+
 body {
   width: 70%;
   height: 100vh;
@@ -56,6 +60,7 @@ body {
 .topnav {
   background-color: #F74444;
   overflow: hidden;
+  border: 1px solid black;
 }
 
 .nav-link {
@@ -134,6 +139,7 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   padding: 0 4px;
+  border: 1px solid black;
 }
 
 .row:after {
@@ -148,4 +154,5 @@ h1 {
   height: 10%;
   font-size: 0.75em;
   bottom: 0;
+  padding: 10px 0 0 0;
 }

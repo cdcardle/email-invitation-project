@@ -1,7 +1,12 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+first_guy = User.new(name: 'First Guy', email: 'firstguy@yahoo.com')
+second_guy = User.new(name: 'Second Guy', email: 'secondguy@gmail.com')
+third_guy = User.new(name: 'Third Guy', email: 'thirdguy@yahoo.com')
+fourth_guy = User.new(name: 'Fourth Guy', email: 'fourthguy@hotmail.com')
+fifth_guy = User.new(name: 'Fifth Guy', email: 'fifthguy@gmail.com')
+sixth_guy = User.new(name: 'Sixth Guy', email: 'sixthguy@gmail.com')
+seventh_guy = User.new(name: 'Seventh Guy', email: 'seventhguy@gmail.com')
+eighth_guy = User.new(name: 'Eighth Guy', email: 'eighthguy@gmail.com')
+ninth_guy = User.new(name: 'Ninth Guy', email: 'ninthguy@gmail.com')
+tenth_guy = User.new(name: 'Tenth Guy', email: 'tenthguy@gmail.com')
+
+inv_one = Invitation.new(name: 'First Guy', age: '8', location_name: 'Chuck E. Cheese', location_address: '1234 That St. This City, MI 12345', date: '')
